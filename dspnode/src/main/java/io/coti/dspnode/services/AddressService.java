@@ -13,6 +13,7 @@ import java.util.Arrays;
 @Slf4j
 @Service
 public class AddressService extends BaseNodeAddressService {
+
     @Autowired
     private IPropagationPublisher propagationPublisher;
 
@@ -32,7 +33,8 @@ public class AddressService extends BaseNodeAddressService {
                 NodeType.TrustScoreNode,
                 NodeType.DspNode,
                 NodeType.ZeroSpendServer,
-                NodeType.FinancialServer));
+                NodeType.FinancialServer,
+                NodeType.HistoryNode));
     }
 
     @Override
